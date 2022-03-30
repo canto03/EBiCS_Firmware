@@ -40,7 +40,7 @@
 #define TS_COEF 12000
 #define PAS_TIMEOUT 8000
 #define RAMP_END 1600
-#define THROTTLE_OFFSET 2050
+#define THROTTLE_OFFSET 1900
 #define THROTTLE_MAX 800
 #define WHEEL_CIRCUMFERENCE 1500
 #define GEAR_RATIO 20 //dummy for testing
