@@ -685,9 +685,7 @@ int main(void)
 		if(tics_to_speed(uint32_tics_filtered>>3)>6)int32_temp_current_target=REGEN_CURRENT; //only apply regen, if motor is turning fast enough
 						else int32_temp_current_target=0;		
 					
-#endif
-			int32_temp_current_target= -map(MS.Voltage,BATTERYVOLTAGE_MAX-1000,BATTERYVOLTAGE_MAX,int32_temp_current_target,0);
-				}	
+#endif	
 			int32_temp_current_target= -map(MS.Voltage*CAL_V,BATTERYVOLTAGE_MAX-1000,BATTERYVOLTAGE_MAX,int32_temp_current_target,0);
 				}
 				//next priority: undervoltage protection
