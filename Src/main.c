@@ -687,7 +687,9 @@ int main(void)
 					
 #endif
 			int32_temp_current_target= -map(MS.Voltage,BATTERYVOLTAGE_MAX-1000,BATTERYVOLTAGE_MAX,int32_temp_current_target,0);
-				}		
+				}	
+			int32_temp_current_target= -map(MS.Voltage*CAL_V,BATTERYVOLTAGE_MAX-1000,BATTERYVOLTAGE_MAX,int32_temp_current_target,0);
+				}
 				//next priority: undervoltage protection
 				else if(MS.Voltage<VOLTAGE_MIN)int32_temp_current_target=0;
 				//next priority: push assist
