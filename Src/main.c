@@ -1915,7 +1915,7 @@ void kingmeter_update(void)
 
     //KM.Tx.Wheeltime_ms = 25;
 
-    KM.Tx.Error = KM_ERROR_NONE;
+    KM.Tx.Error =  0x29;
 
     KM.Tx.Current_x10 = (uint16_t) (MS.Battery_Current/100); //MS.Battery_Current is in mA
 
